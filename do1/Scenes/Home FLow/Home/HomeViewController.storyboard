@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q2Z-s0-2Vp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="H7O-9o-B6k">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Q2Z-s0-2Vp" customClass="HomeViewController" customModule="do1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E1k-jr-E8X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home VC is here!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J26-v1-FwX">
+                                <rect key="frame" x="79" y="429.5" width="256.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-AJ-K2y">
+                                <rect key="frame" x="141" y="556.5" width="132" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="EsZ-SI-7pc"/>
+                                    <constraint firstAttribute="height" constant="51" id="mJL-qf-uAs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Button Tapped">
+                                    <color key="titleColor" red="0.1960784314" green="0.20000000000000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="72o-gl-JZ9"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="gYU-AJ-K2y" firstAttribute="centerX" secondItem="E1k-jr-E8X" secondAttribute="centerX" id="X0Y-0q-h5X"/>
+                            <constraint firstItem="J26-v1-FwX" firstAttribute="centerY" secondItem="E1k-jr-E8X" secondAttribute="centerY" id="k7s-u0-eA5"/>
+                            <constraint firstItem="J26-v1-FwX" firstAttribute="centerX" secondItem="E1k-jr-E8X" secondAttribute="centerX" id="qeL-FA-WfR"/>
+                            <constraint firstItem="gYU-AJ-K2y" firstAttribute="top" secondItem="J26-v1-FwX" secondAttribute="bottom" constant="90" id="thb-Fl-PXZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="gYU-AJ-K2y" id="3ok-Zg-6td"/>
+                        <outlet property="heading" destination="J26-v1-FwX" id="Lrl-uA-GtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGt-9A-DWo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
